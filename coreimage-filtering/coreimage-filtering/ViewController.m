@@ -15,6 +15,7 @@
 @property (nonatomic, assign) BOOL filterApplied;
 @property (nonatomic, assign) BOOL filterSelected;
 @property (nonatomic, strong) NSString *filterName;
+@property (nonatomic, strong) NSString *originalImageFilename;
 
 @end
 
@@ -74,6 +75,8 @@
 }
 
 - (IBAction)saveChangesDidTap:(UIButton *)sender {
+    
+    UIImageWriteToSavedPhotosAlbum(self.filteredImageView.image, nil, nil, nil);
     
     self.imageSelected = false;
     self.filterApplied = false;
