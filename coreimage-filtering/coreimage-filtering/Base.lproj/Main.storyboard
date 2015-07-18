@@ -55,21 +55,30 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZA-zC-tcH">
                                 <rect key="frame" x="16" y="562" width="181" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Select picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectPictureDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6b-sL-bPf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-kZ-fiA">
                                 <rect key="frame" x="395" y="562" width="181" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Save changes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveChangesDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCo-s3-nra"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vao-dO-oUf">
                                 <rect key="frame" x="205" y="562" width="182" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Apply filter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="applyFilterDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urW-2v-Eaz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -100,6 +109,12 @@
                             <constraint firstItem="2Td-Nw-l3l" firstAttribute="top" secondItem="wuU-bs-8Ir" secondAttribute="bottom" constant="8" id="zVP-gs-Znv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applyFilterButton" destination="vao-dO-oUf" id="yBv-rw-hEN"/>
+                        <outlet property="filteredImageView" destination="qhg-XF-nK6" id="tji-j3-wGi"/>
+                        <outlet property="originalImageView" destination="2Td-Nw-l3l" id="523-AJ-WXg"/>
+                        <outlet property="saveChangesButton" destination="pNg-kZ-fiA" id="iO3-4B-gcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

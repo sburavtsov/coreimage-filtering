@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
 
+@property (weak, nonatomic) IBOutlet UIButton *applyFilterButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveChangesButton;
+@property (weak, nonatomic) IBOutlet UIImageView *originalImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *filteredImageView;
 
 @end
 
