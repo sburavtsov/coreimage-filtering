@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-Nw-l3l">
-                                <rect key="frame" x="150" y="49" width="300" height="234"/>
+                                <rect key="frame" x="150" y="49" width="300" height="215"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="hN3-xd-hpF"/>
@@ -35,7 +35,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxv-Da-4bm">
-                                <rect key="frame" x="16" y="291" width="42" height="21"/>
+                                <rect key="frame" x="16" y="272" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-XF-nK6">
-                                <rect key="frame" x="150" y="320" width="300" height="234"/>
+                                <rect key="frame" x="150" y="301" width="300" height="215"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Qcz-DG-vxW"/>
@@ -62,15 +62,6 @@
                                     <action selector="selectPictureDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6b-sL-bPf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-kZ-fiA">
-                                <rect key="frame" x="395" y="562" width="181" height="30"/>
-                                <state key="normal" title="Save changes">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveChangesDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCo-s3-nra"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vao-dO-oUf">
                                 <rect key="frame" x="205" y="562" width="182" height="30"/>
                                 <state key="normal" title="Apply filter">
@@ -80,18 +71,43 @@
                                     <action selector="applyFilterDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urW-2v-Eaz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-kZ-fiA">
+                                <rect key="frame" x="395" y="562" width="181" height="30"/>
+                                <state key="normal" title="Save changes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveChangesDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCo-s3-nra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhC-8U-saI">
+                                <rect key="frame" x="16" y="524" width="568" height="30"/>
+                                <state key="normal" title="Select filter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="daV-Fq-gCf" kind="popoverPresentation" popoverAnchorView="HhC-8U-saI" id="6Fh-uS-xFX">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HhC-8U-saI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0gr-dA-ojh"/>
                             <constraint firstItem="pNg-kZ-fiA" firstAttribute="width" secondItem="vao-dO-oUf" secondAttribute="width" id="1P7-oy-GmH"/>
                             <constraint firstItem="vao-dO-oUf" firstAttribute="top" secondItem="qhg-XF-nK6" secondAttribute="bottom" constant="8" id="3NF-ia-N62"/>
+                            <constraint firstItem="HhC-8U-saI" firstAttribute="top" secondItem="qhg-XF-nK6" secondAttribute="bottom" constant="8" id="68P-R4-qtt"/>
+                            <constraint firstItem="pNg-kZ-fiA" firstAttribute="top" secondItem="HhC-8U-saI" secondAttribute="bottom" constant="8" id="6ut-yF-Ij9"/>
                             <constraint firstItem="pNg-kZ-fiA" firstAttribute="leading" secondItem="vao-dO-oUf" secondAttribute="trailing" constant="8" id="6v4-LA-y6X"/>
                             <constraint firstItem="jZA-zC-tcH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Ea-jl-Eep"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jZA-zC-tcH" secondAttribute="bottom" constant="8" id="AfW-ei-963"/>
+                            <constraint firstItem="HhC-8U-saI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DTk-o3-9vB"/>
                             <constraint firstItem="vao-dO-oUf" firstAttribute="top" secondItem="qhg-XF-nK6" secondAttribute="bottom" constant="8" id="HVZ-RF-0q5"/>
                             <constraint firstItem="vao-dO-oUf" firstAttribute="leading" secondItem="jZA-zC-tcH" secondAttribute="trailing" constant="8" id="K10-2c-ICl"/>
                             <constraint firstItem="qhg-XF-nK6" firstAttribute="height" secondItem="2Td-Nw-l3l" secondAttribute="height" id="LeH-fr-Aax"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pNg-kZ-fiA" secondAttribute="trailing" constant="8" id="MMf-3u-VZd"/>
+                            <constraint firstItem="HhC-8U-saI" firstAttribute="top" secondItem="qhg-XF-nK6" secondAttribute="bottom" constant="8" id="Nl0-lb-xec"/>
                             <constraint firstItem="vao-dO-oUf" firstAttribute="leading" secondItem="jZA-zC-tcH" secondAttribute="trailing" constant="8" id="NwB-s3-qaI"/>
                             <constraint firstItem="pNg-kZ-fiA" firstAttribute="leading" secondItem="vao-dO-oUf" secondAttribute="trailing" constant="8" id="Q1p-Uk-rQa"/>
                             <constraint firstItem="jZA-zC-tcH" firstAttribute="top" secondItem="qhg-XF-nK6" secondAttribute="bottom" constant="8" id="St1-ts-H84"/>
@@ -108,17 +124,62 @@
                             <constraint firstItem="qhg-XF-nK6" firstAttribute="top" secondItem="gxv-Da-4bm" secondAttribute="bottom" constant="8" id="ylj-NM-YBP"/>
                             <constraint firstItem="2Td-Nw-l3l" firstAttribute="top" secondItem="wuU-bs-8Ir" secondAttribute="bottom" constant="8" id="zVP-gs-Znv"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="St1-ts-H84"/>
+                                <exclude reference="3NF-ia-N62"/>
+                                <exclude reference="HVZ-RF-0q5"/>
+                                <exclude reference="nvM-rt-jTb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="applyFilterButton" destination="vao-dO-oUf" id="yBv-rw-hEN"/>
                         <outlet property="filteredImageView" destination="qhg-XF-nK6" id="tji-j3-wGi"/>
                         <outlet property="originalImageView" destination="2Td-Nw-l3l" id="523-AJ-WXg"/>
                         <outlet property="saveChangesButton" destination="pNg-kZ-fiA" id="iO3-4B-gcg"/>
+                        <outlet property="selectFilterButton" destination="HhC-8U-saI" id="2I7-CL-tpE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117" y="367"/>
+        </scene>
+        <!--Available Filters Table View Controller-->
+        <scene sceneID="RhW-pT-tBT">
+            <objects>
+                <tableViewController id="daV-Fq-gCf" customClass="AvailableFiltersTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wMd-mE-63d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="filterNameCell" textLabel="JRb-e7-kEP" style="IBUITableViewCellStyleDefault" id="fB3-hz-ob4">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fB3-hz-ob4" id="jdQ-zT-Mee">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JRb-e7-kEP">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="daV-Fq-gCf" id="3cJ-FN-0NF"/>
+                            <outlet property="delegate" destination="daV-Fq-gCf" id="7Da-B2-O6p"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VW6-F7-4Jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="367"/>
         </scene>
     </scenes>
 </document>

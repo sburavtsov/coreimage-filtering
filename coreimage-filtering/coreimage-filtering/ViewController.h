@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *saveChangesButton;
 @property (weak, nonatomic) IBOutlet UIImageView *originalImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *filteredImageView;
+@property (weak, nonatomic) IBOutlet UIButton *selectFilterButton;
 
 @end
 

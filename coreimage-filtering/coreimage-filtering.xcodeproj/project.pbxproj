@@ -14,6 +14,7 @@
 		38410F691B5A8D8D00DDA9CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38410F681B5A8D8D00DDA9CC /* Images.xcassets */; };
 		38410F6C1B5A8D8D00DDA9CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38410F6A1B5A8D8D00DDA9CC /* LaunchScreen.xib */; };
 		38410F781B5A8D8D00DDA9CC /* coreimage_filteringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38410F771B5A8D8D00DDA9CC /* coreimage_filteringTests.m */; };
+		38410F841B5AD8F900DDA9CC /* AvailableFiltersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38410F831B5AD8F900DDA9CC /* AvailableFiltersTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		38410F711B5A8D8D00DDA9CC /* coreimage-filteringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreimage-filteringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38410F761B5A8D8D00DDA9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38410F771B5A8D8D00DDA9CC /* coreimage_filteringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreimage_filteringTests.m; sourceTree = "<group>"; };
+		38410F821B5AD8F900DDA9CC /* AvailableFiltersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableFiltersTableViewController.h; sourceTree = "<group>"; };
+		38410F831B5AD8F900DDA9CC /* AvailableFiltersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableFiltersTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				38410F681B5A8D8D00DDA9CC /* Images.xcassets */,
 				38410F6A1B5A8D8D00DDA9CC /* LaunchScreen.xib */,
 				38410F5B1B5A8D8D00DDA9CC /* Supporting Files */,
+				38410F821B5AD8F900DDA9CC /* AvailableFiltersTableViewController.h */,
+				38410F831B5AD8F900DDA9CC /* AvailableFiltersTableViewController.m */,
 			);
 			path = "coreimage-filtering";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38410F641B5A8D8D00DDA9CC /* ViewController.m in Sources */,
+				38410F841B5AD8F900DDA9CC /* AvailableFiltersTableViewController.m in Sources */,
 				38410F611B5A8D8D00DDA9CC /* AppDelegate.m in Sources */,
 				38410F5E1B5A8D8D00DDA9CC /* main.m in Sources */,
 			);
